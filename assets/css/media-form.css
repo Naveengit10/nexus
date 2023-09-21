@@ -1,0 +1,14 @@
+@media (max-width:992px) {
+    .nav-item-main{
+        flex-direction: row;
+    }
+    .nav-item-p a br{
+        display: none;
+    }
+    .nav-item-p a{
+        padding: 20px;
+    }
+    .nav-item{
+        margin: 10px;
+    }
+}

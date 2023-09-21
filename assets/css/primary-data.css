@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Pangolin&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+/* navbarstart */
+.navbar-collapse{
+    justify-content: end;
+    align-items: end;
+}
+.nav-item-main{
+    margin-right: 40px;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.nav-item {
+    padding: 10px;
+     width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #AE275F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-item-p {
+    
+    text-align: center;
+    /* font-family: Montserrat; */
+    font-style: normal;
+    line-height: normal;
+    padding-top: 5px;
+    padding-bottom: 0px !important;
+}
+.nav-item-p a{
+    text-decoration: none;
+    color: #AE275F !important;
+    font-weight: 500;
+    font-size: 14px;
+}
+.active .nav-item{
+    background-color: #AE275F;
+}
+/* navbar-end */
+/* section-start*/
+.section{
+    padding: 40px 0px;
+}
+/* headding style start */
+.sec-1-header{
+    padding: 30px 0px;
+
+}
+.sec-1-header h3{
+    color: #103962;
+    text-align: center;
+    /* font-family: Montserrat; */
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+/* headding style end */
+
+/* form */
+
+.form form{
+    display: grid;
+    max-width: 400px;
+    margin: auto;
+}
+.form form label{
+    color: #103962;
+    /* font-family: Montserrat; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 10px;
+    padding-left: 0px;
+}
+.form form input{
+    border-radius: 10px;
+    border: 2px solid #AE275F;
+    padding: 10px;
+    
+}
+.form form button{
+    border-radius: 10px;
+    background: #AE275F;
+    color: #FFF;
+    /* font-family: Montserrat; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    min-width: 300px;
+    padding: 15px;
+    margin: 30px auto;
+    border: none;
+}
+.form form button:hover{
+    color: #AE275F;
+    background-color: #FFF;
+    border: 1px solid #AE275F;
+}
+.form form .submit:hover{
+    color: #AE275F;
+    background-color: #FFF;
+    border: 1px solid #AE275F;
+}
+.form form .submit{
+    border-radius: 10px;
+    background: #AE275F;
+    color: #FFF;
+    /* font-family: Montserrat; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    min-width: 300px;
+    padding: 15px;
+    margin: 30px auto;
+    border: none;
+}
+#ph-num{
+    min-width: 326px;
+}
+#ph-num-btn{
+    display: inline;
+    min-width: 50px;
+    margin: 0px auto;
+}
+.otp-div input{
+    max-width: 76px;
+    margin: auto;
+}
+@media(max-width:424px){
+    #ph-num{
+          min-width: 272px !important;
+    }
+    
+    .otp-div input{
+        width: 67px !important;
+    }
+}@media(max-width:378px){
+       
+    .otp-div input{
+        width: 64px !important;
+    }
+}
+/* footerstart */
+.footer-login{
+    background:#AE275F;
+}
+.footer-login-row{
+    justify-content: space-between;
+}
+.footer-login-para{
+    color: #FFF;
+    text-align: center;
+    /* font-family: Montserrat; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px;
+    padding-top: 17px;
+    margin-bottom: 0px !important;
+}
+/* footer end */

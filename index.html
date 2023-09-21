@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fevicon -->
+    <link rel="icon" href="assets/img/link logo.png" type="image/x-icon">
+
+    <title>nexus-bank</title>
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+        <!-- media query -->
+        <link rel="stylesheet" href="assets/css/media-query.css">
+        <!-- carousel cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  
+  </head>
+<body>
+<div class="main">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-light">
+        <div class="container-xl ">
+          <a class="navbar-brand " href="index.html"><img src="assets/img/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="search">
+            <div class="serach-btn">
+                <img src="assets/img/search.png" alt="search">
+            </div>
+          </div>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0 nav-list">
+              <li class="dropdown dropdown-full-width personal nav-li-name">
+                <a href="#" class="dropdown-toggle nav-li-name-a" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="">Personal </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col col-xs-6 col-md-3 list-subtitle">
+                        <ul class="nav flex-column">
+                          <h2 class="dropdown-h2">Resources</h2>
+                          <li><a class=" dropdown-item dropdown-li" href="#">Calculations</a></li>
+                        <li><a class="dropdown-item dropdown-li" href="#">Accounts Protection</a></li>
+                        <li><a class="dropdown-item dropdown-li" href="#">Fraud Production</a></li>
+                        <li><a class="dropdown-item dropdown-li" href="#">Privacy</a></li>
+                        </ul>
+                      </div>
+                      <!-- /.col  -->
+                        <div class="col col-xs-6 col-md-3 list-subtitle">
+                        <ul class="nav flex-column">
+                          <h2 class="dropdown-h2">Services</h2>
+                          <li><a class="dropdown-item dropdown-li" href="#">Digital Banking</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">Credit card</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">Debit Card</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">Safe Deposit Box</a></li> 
+                        </ul>
+                      </div>
+                      <!-- /.col  -->
+  
+                      <div class="col col-sm-6 col-md-3 list-subtitle">
+                        <ul class="nav flex-column">
+                          <h2 class="dropdown-h2">Deposit</h2>
+                          <li><a class="dropdown-item dropdown-li" href="#">Checking Account</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">Saving Account</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">Individual Retirement <br>Account</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">CDs</a></li>
+                        </ul>
+                      </div>
+                      <!-- /.col  -->
+                        <div class="col col-xs-6 col-md-3 list-subtitle">
+                        <ul class="nav flex-column">
+                          <h2 class="dropdown-h2">Loans</h2>
+                          <li><a class="dropdown-item dropdown-li" href="#">Personal Loans</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">Credit Loan</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">Mortgage Loan</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">Home Loan</a></li>
+                        </ul>
+                      </div>
+                      <!-- /.col  -->
+  
+                    </div>
+                  </div>
+                  <!--  /.container  -->
+                </div>
+              </li>
+              <li class="dropdown dropdown-full-width business nav-li-name">
+                <a href="#" class="dropdown-toggle nav-li-name-a" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Business <span class="caret"></span></a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col col-xs-6 col-md-3">
+                        <ul class="nav flex-column ">
+                          <h2 class="dropdown-h2">Resources</h2>
+                          <li><a class=" dropdown-item dropdown-li" href="#">Calculations</a></li>
+                        <li><a class="dropdown-item dropdown-li" href="#">Accounts Protection</a></li>
+                        <li><a class="dropdown-item dropdown-li" href="#">Fraud Production</a></li>
+                        <li><a class="dropdown-item dropdown-li" href="#">Privacy</a></li>
+                        </ul>
+                      </div>
+                      <!-- /.col  -->
+                        <div class="col col-xs-6 col-md-3">
+                        <ul class="nav flex-column">
+                          <h2 class="dropdown-h2">Services</h2>
+                          <li><a class="dropdown-item dropdown-li" href="#">Digital Banking</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">Credit card</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">Debit Card</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">Safe Deposit Box</a></li> 
+                        </ul>
+                      </div>
+                      <!-- /.col  -->
+  
+                      <div class="col col-sm-6 col-md-3">
+                        <ul class="nav flex-column">
+                          <h2 class="dropdown-h2">Deposit</h2>
+                          <li><a class="dropdown-item dropdown-li" href="#">Checking Account</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">Saving Account</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">Individual Retirement <br>Account</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">CDs</a></li>
+                        </ul>
+                      </div>
+                      <!-- /.col  -->
+                        <div class="col col-xs-6 col-md-3">
+                        <ul class="nav flex-column">
+                          <h2 class="dropdown-h2">Loans</h2>
+                          <li><a class="dropdown-item dropdown-li" href="#">Personal Loans</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">Credit Loan</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">Mortgage Loan</a></li>
+                        </ul>
+                      </div>
+                      <!-- /.col  -->
+  
+                    </div>
+                  </div>
+                  <!--  /.container  -->
+                </div>
+              </li>
+              <li class="dropdown dropdown-full-width wealth nav-li-name">
+                <a href="#" class="dropdown-toggle nav-li-name-a" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Wealth <span class="caret"></span></a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col col-xs-6 col-md-4">
+                        <ul class="nav flex-column">
+                          <h2 class="dropdown-h2">Private Banking</h2>
+                          <li><a class="dropdown-item dropdown-li" href="#">Personal Private Banking</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">Business Private Banking</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">Health Care  Banking</a></li>
+                        </ul>
+                      </div>
+                      <!-- /.col  -->
+                        <div class="col col-xs-6 col-md-4">
+                        <ul class="nav flex-column">
+                          <h2 class="dropdown-h2">Investment Managment</h2>
+                        <li><a class="dropdown-item dropdown-li" href="#">Wealth Managment</a></li>
+                        <li><a class="dropdown-item dropdown-li" href="#">Business Investment Managment</a></li>
+                        <li><a class="dropdown-item dropdown-li" href="#">Personal Investment Managment</a></li>
+                        </ul>
+                      </div>
+                      <!-- /.col  -->
+  
+                      <div class="col col-sm-6 col-md-4">
+                        <ul class="nav flex-column">
+                          <h2 class="dropdown-h2">Financial Planning</h2>
+                          <li><a class="dropdown-item dropdown-li" href="#">Success Planning</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">Loan Planning</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">Business Investment Planning</a></li>
+                        </ul>
+                      </div>
+                      <!-- /.col  -->
+                      
+  
+                    </div>
+                  </div>
+                  <!--  /.container  -->
+                </div>
+              </li>
+              <li class="dropdown dropdown-full-width nri nav-li-name">
+                <a href="#" class="dropdown-toggle nav-li-name-a" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NRI<span class="caret"></span></a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col col-xs-6 col-md-3">
+                        <ul class="nav flex-column">
+                          <h2 class="dropdown-h2">Cards</h2>
+                          <li><a class="dropdown-item dropdown-li" href="#">Credit Card</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">Debit Card</a></li>
+                        </ul>
+                      </div>
+                      <!-- /.col  -->
+                        <div class="col col-xs-6 col-md-3">
+                        <ul class="nav flex-column">
+                          <h2 class="dropdown-h2">Insurance & Investment</h2>
+                        <li><a class="dropdown-item dropdown-li" href="#">Insurance</a></li>
+                        <li><a class="dropdown-item dropdown-li" href="#">Insurance Managment</a></li>
+                        <li><a class="dropdown-item dropdown-li" href="#">Investment Scheme</a></li>
+                        <li><a class="dropdown-item dropdown-li" href="#">NPS</a></li>
+                        </ul>
+                      </div>
+                      <!-- /.col  -->
+  
+                      <div class="col col-sm-6 col-md-3">
+                        <ul class="nav flex-column">
+                          <h2 class="dropdown-h2">Accounts & Deposits</h2>
+                          <li><a class="dropdown-item dropdown-li" href="#">Current Account</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">Savings Account</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">NRI Seafearer</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">NRI Deposit</a></li>
+                        </ul>
+                      </div>
+                      <!-- /.col  -->
+                      <div class="col col-sm-6 col-md-3">
+                        <ul class="nav flex-column">
+                          <h2 class="dropdown-h2">Loans</h2>
+                          <li><a class="dropdown-item dropdown-li" href="#">NRI Gold Loan</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">NRI Gold Loan</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">NRI Property Loan</a></li>
+                          <li><a class="dropdown-item dropdown-li" href="#">NRI Home Loan</a></li>
+                        </ul>
+                      </div>
+  
+                    </div>
+                  </div>
+                  <!--  /.container  -->
+                </div>
+              </li>
+                </ul>
+            <form class="d-flex" role="search">
+                <button class=" acnt-btn nav-btn" type="submit"><a href="openacc.html">OPEN AN ACCOUNT</a> </button>
+                <button class=" log-btn nav-btn" type="submit"><i class="fa-solid fa-lock lock-icon"></i>LOGIN</button>
+              </form>
+        
+          </div>
+        </div>
+    </nav>
+
+    <!-- section-1 -->
+    <div class="section-1">
+        <div class="container">
+            <div class="col-lg-4">
+                <div class="sec-1-head">
+                    <h2>Modern Banking.<br>
+                        Lasting Relationships.</h2>
+                </div>
+                <div class="sec-1-para">
+                    <p>From cultivating relationships, to thoughtful
+                        client services, to offering advanced products and
+                        services, we’re driven by one thing: you.
+                    </p>
+                </div>
+                <div class="sec-1-btn">
+                    <button>GET TO KNOW US</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <img src="assets/img/bot.png" alt="" id="bot" width="134px" height="200px">
+    <!-- section-2-start -->
+    <div class="section2">
+      <div class="container">
+                      <div class="section-2-head" >
+                  <h1 >Enter Providing <span >Best Service</span></h1> 
+              </div>
+              <!-- owl-carousel -->
+              <div class="carosel ">
+                  <div class="owl-carousel owl-theme">
+                      <div class="carosel-item ">
+                          <div class="svg_picture">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
+                                  <mask id="mask0_120_523" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="72" height="72">
+                                  <rect width="72" height="72" fill="#D9D9D9"/>
+                                  </mask>
+                                  <g mask="url(#mask0_120_523)">
+                                  <path d="M15 51V30H21V51H15ZM33 51V30H39V51H33ZM6 63V57H66V63H6ZM51 51V30H57V51H51ZM6 24V18L36 3L66 18V24H6ZM19.35 18H52.65L36 9.75L19.35 18Z" fill="#AE275F"/>
+                                  </g>
+                              </svg>
+                          </div>
+                          <div><h2>Account</h2></div>
+                      </div>
+                      <!-- svg picture -->
+                      <div class="carosel-item">
+                          <div class="svg_picture">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
+                                  <mask id="mask0_120_531" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="72" height="72">
+                                  <rect width="72" height="72" fill="#D9D9D9"/>
+                                  </mask>
+                                  <g mask="url(#mask0_120_531)">
+                                  <path d="M66 18V54C66 55.65 65.4125 57.0625 64.2375 58.2375C63.0625 59.4125 61.65 60 60 60H12C10.35 60 8.9375 59.4125 7.7625 58.2375C6.5875 57.0625 6 55.65 6 54V18C6 16.35 6.5875 14.9375 7.7625 13.7625C8.9375 12.5875 10.35 12 12 12H60C61.65 12 63.0625 12.5875 64.2375 13.7625C65.4125 14.9375 66 16.35 66 18ZM12 24H60V18H12V24ZM12 36V54H60V36H12Z" fill="#AE275F"/>
+                                  </g>
+                              </svg>
+                          </div>
+                          <div><h2>Card</h2></div>
+                      </div>
+                      <div class="carosel-item">
+                          <div class="svg_picture">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
+                                  <mask id="mask0_120_539" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="72" height="72">
+                                  <rect width="72" height="72" fill="#D9D9D9"/>
+                                  </mask>
+                                  <g mask="url(#mask0_120_539)">
+                                  <path d="M24 51H30V48H33C33.85 48 34.5625 47.7125 35.1375 47.1375C35.7125 46.5625 36 45.85 36 45V36C36 35.15 35.7125 34.4375 35.1375 33.8625C34.5625 33.2875 33.85 33 33 33H24V30H36V24H30V21H24V24H21C20.15 24 19.4375 24.2875 18.8625 24.8625C18.2875 25.4375 18 26.15 18 27V36C18 36.85 18.2875 37.5625 18.8625 38.1375C19.4375 38.7125 20.15 39 21 39H30V42H18V48H24V51ZM48 48.75L54 42.75H42L48 48.75ZM42 30H54L48 24L42 30ZM12 60C10.35 60 8.9375 59.4125 7.7625 58.2375C6.5875 57.0625 6 55.65 6 54V18C6 16.35 6.5875 14.9375 7.7625 13.7625C8.9375 12.5875 10.35 12 12 12H60C61.65 12 63.0625 12.5875 64.2375 13.7625C65.4125 14.9375 66 16.35 66 18V54C66 55.65 65.4125 57.0625 64.2375 58.2375C63.0625 59.4125 61.65 60 60 60H12ZM12 54H60V18H12V54Z" fill="#AE275F"/>
+                                  </g>
+                              </svg>
+                          </div>
+                          <div><h2>Loan</h2></div>
+                      </div>
+                      <div class="carosel-item">
+                          <div class="svg_picture">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66" fill="none">
+                              <path d="M33 66C27.4 66 22.25 64.725 17.55 62.175C12.85 59.625 9 56.225 6 51.975V60H0V42H18V48H10.575C12.975 51.6 16.1375 54.5 20.0625 56.7C23.9875 58.9 28.3 60 33 60C36.75 60 40.2625 59.2875 43.5375 57.8625C46.8125 56.4375 49.6625 54.5125 52.0875 52.0875C54.5125 49.6625 56.4375 46.8125 57.8625 43.5375C59.2875 40.2625 60 36.75 60 33H66C66 37.55 65.1375 41.825 63.4125 45.825C61.6875 49.825 59.325 53.325 56.325 56.325C53.325 59.325 49.825 61.6875 45.825 63.4125C41.825 65.1375 37.55 66 33 66ZM30.3 54V50.1C27.95 49.55 26.0375 48.5375 24.5625 47.0625C23.0875 45.5875 22 43.65 21.3 41.25L26.25 39.3C26.85 41.35 27.7875 42.8875 29.0625 43.9125C30.3375 44.9375 31.8 45.45 33.45 45.45C35.1 45.45 36.5125 45.0625 37.6875 44.2875C38.8625 43.5125 39.45 42.3 39.45 40.65C39.45 39.2 38.8375 38.025 37.6125 37.125C36.3875 36.225 34.2 35.2 31.05 34.05C28.1 33 25.9375 31.75 24.5625 30.3C23.1875 28.85 22.5 26.95 22.5 24.6C22.5 22.55 23.2125 20.6875 24.6375 19.0125C26.0625 17.3375 28 16.25 30.45 15.75V12H35.7V15.75C37.5 15.9 39.1375 16.625 40.6125 17.925C42.0875 19.225 43.1 20.75 43.65 22.5L38.85 24.45C38.45 23.3 37.8 22.3375 36.9 21.5625C36 20.7875 34.75 20.4 33.15 20.4C31.4 20.4 30.0625 20.775 29.1375 21.525C28.2125 22.275 27.75 23.3 27.75 24.6C27.75 25.9 28.325 26.925 29.475 27.675C30.625 28.425 32.7 29.3 35.7 30.3C39.3 31.6 41.7 33.125 42.9 34.875C44.1 36.625 44.7 38.55 44.7 40.65C44.7 42.1 44.45 43.375 43.95 44.475C43.45 45.575 42.7875 46.5125 41.9625 47.2875C41.1375 48.0625 40.175 48.6875 39.075 49.1625C37.975 49.6375 36.8 50 35.55 50.25V54H30.3ZM0 33C0 28.45 0.8625 24.175 2.5875 20.175C4.3125 16.175 6.675 12.675 9.675 9.675C12.675 6.675 16.175 4.3125 20.175 2.5875C24.175 0.8625 28.45 0 33 0C38.6 0 43.75 1.275 48.45 3.825C53.15 6.375 57 9.775 60 14.025V6H66V24H48V18H55.425C53.025 14.4 49.8625 11.5 45.9375 9.3C42.0125 7.1 37.7 6 33 6C29.25 6 25.7375 6.7125 22.4625 8.1375C19.1875 9.5625 16.3375 11.4875 13.9125 13.9125C11.4875 16.3375 9.5625 19.1875 8.1375 22.4625C6.7125 25.7375 6 29.25 6 33H0Z" fill="#AE275F"/>
+                            </svg>
+                          </div>
+                          <div><h2>Pay</h2></div>
+                      </div>
+                      <div class="carosel-item">
+                        <div class="svg_picture">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
+                            <mask id="mask0_275_576" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="72" height="72">
+                              <rect width="72" height="72" fill="#D9D9D9"/>
+                            </mask>
+                            <g mask="url(#mask0_275_576)">
+                              <path d="M58.8 63L39.75 43.95L43.95 39.7501L63 58.8L58.8 63ZM17.85 60.9001C14.85 57.9001 12.625 54.525 11.175 50.775C9.725 47.025 9 43.2 9 39.3C9 35.4 9.725 31.6 11.175 27.9C12.625 24.2 14.85 20.85 17.85 17.85C20.85 14.85 24.2125 12.6125 27.9375 11.1375C31.6625 9.66255 35.475 8.92505 39.375 8.92505C43.275 8.92505 47.0875 9.66255 50.8125 11.1375C54.5375 12.6125 57.9 14.85 60.9 17.85L17.85 60.9001ZM18.45 51.7501L22.5 47.7C21.7 46.65 20.9375 45.575 20.2125 44.475C19.4875 43.375 18.825 42.275 18.225 41.175C17.625 40.075 17.1 38.9751 16.65 37.8751C16.2 36.7751 15.8 35.7 15.45 34.65C14.9 37.6 14.8625 40.5501 15.3375 43.5001C15.8125 46.4501 16.85 49.2001 18.45 51.7501ZM26.85 43.5001L43.5 26.7C41.35 25.05 39.1875 23.7125 37.0125 22.6875C34.8375 21.6625 32.8 20.9625 30.9 20.5875C29 20.2125 27.2875 20.15 25.7625 20.4C24.2375 20.65 23.05 21.2 22.2 22.05C21.35 22.95 20.8 24.1625 20.55 25.6875C20.3 27.2125 20.3625 28.9375 20.7375 30.8625C21.1125 32.7875 21.8125 34.8251 22.8375 36.975C23.8625 39.125 25.2 41.3001 26.85 43.5001ZM47.7 22.5L51.9 18.45C49.25 16.85 46.45 15.8 43.5 15.3C40.55 14.8 37.6 14.85 34.65 15.45C35.75 15.8 36.85 16.2 37.95 16.65C39.05 17.1 40.15 17.6125 41.25 18.1875C42.35 18.7625 43.4375 19.4125 44.5125 20.1375C45.5875 20.8625 46.65 21.65 47.7 22.5Z" fill="#AE275F"/>
+                            </g>
+                          </svg>
+                        </div>
+                          <div><h2>Insure</h2></div>
+                      </div>
+                      <div class="carosel-item">
+                          <div class="svg_picture">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
+                              <mask id="mask0_275_592" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="72" height="72">
+                                <rect width="72" height="72" fill="#D9D9D9"/>
+                              </mask>
+                              <g mask="url(#mask0_275_592)">
+                                <path d="M12 60V27H24V60H12ZM30 60V12H42V60H30ZM48 60V39H60V60H48Z" fill="#AE275F"/>
+                              </g>
+                            </svg>
+                          </div>
+                          <div><h2>Invest</h2></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    
+    <!-- section-2-end -->
+
+    <!-- section-3-start -->
+    
+
+<!-- section-3-start -->
+      <div class="section-3">
+          <div class="container">
+                  <div class="section-3-head">
+                      <h1>Other Ways <span>To Bank</span></h1>
+                      
+                  </div>
+                  <div class="section-3-box">
+                      <div class="row">
+                          <div class="col-lg-4 ways">
+                              <div class="sec-3-box">
+                                      <div>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+                                              <path fill-rule="evenodd" clip-rule="evenodd" d="M69.9821 33.2311C69.5171 14.798 54.3274 0 35.6349 0C17.1672 0 2.10792 14.4608 1.30309 32.6027C1.28776 33.1008 1.26987 33.5989 1.26987 34.0996C1.26987 40.5496 3.07117 46.5653 6.19341 51.7126L0 70L19.0324 63.9511C23.9559 66.6537 29.6178 68.1966 35.6349 68.1966C54.6187 68.1966 70 52.9311 70 34.097C70 33.8083 70 33.5197 69.9821 33.2311ZM35.6349 62.7607C29.7635 62.7607 24.3085 61.0237 19.7401 58.0171L8.63857 61.5549L12.2412 50.9079C8.78166 46.1796 6.74015 40.3733 6.74015 34.0996C6.74015 33.1672 6.78872 32.2348 6.88581 31.3177C8.30129 16.8083 20.6573 5.43588 35.6349 5.43588C50.8066 5.43588 63.2752 17.097 64.4326 31.8618C64.4965 32.6026 64.5297 33.3409 64.5297 34.097C64.5297 49.9091 51.5629 62.7607 35.6349 62.7607Z" fill="#AE275F"/>
+                                              <path fill-rule="evenodd" clip-rule="evenodd" d="M51.3877 40.9841C50.5343 40.5651 46.4003 38.5394 45.6287 38.266C44.8571 37.9774 44.2924 37.8471 43.7303 38.685C43.1682 39.5203 41.5432 41.403 41.0603 41.9496C40.5621 42.5116 40.0791 42.578 39.2258 42.1591C38.3903 41.7402 35.6692 40.8716 32.4525 38.0081C29.9588 35.8036 28.2546 33.0703 27.7717 32.235C27.2888 31.3997 27.7231 30.9475 28.1421 30.5312C28.5279 30.1454 28.9776 29.5502 29.412 29.0674C29.5244 28.9218 29.6215 28.7941 29.7186 28.6638C29.9128 28.3573 30.0559 28.0686 30.25 27.665C30.5388 27.103 30.3956 26.6202 30.1861 26.2013C29.9766 25.7824 28.2877 21.6646 27.58 19.994C26.8876 18.3208 26.1798 18.6095 25.6816 18.6095C25.1987 18.6095 24.6366 18.5303 24.0719 18.5303C23.5098 18.5303 22.5926 18.7397 21.8184 19.575C21.0468 20.4104 18.875 22.4386 18.875 26.5564C18.875 27.522 19.0513 28.485 19.3094 29.402C20.1628 32.3448 21.9973 34.7741 22.3167 35.193C22.7357 35.7397 28.1396 44.4581 36.6989 47.8198C45.2735 51.1483 45.2735 50.0396 46.8193 49.894C48.3626 49.7663 51.8067 47.8836 52.4991 45.9218C53.2069 43.9753 53.2069 42.3021 52.9974 41.9496C52.7853 41.6099 52.2232 41.4004 51.3877 40.9841Z" fill="#AE275F"/>
+                                              </svg>  
+                                          <p>WhatsApp Banking</p>
+                                      </div>                                  
+                              </div>
+                          </div>
+                          <div class="col-lg-4 ways">
+                              <div class="sec-3-box">
+                                  <div>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+                                          <mask id="mask0_1_2467" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="70" height="70">
+                                            <rect width="70" height="70" fill="#D9D9D9"/>
+                                          </mask>
+                                          <g mask="url(#mask0_1_2467)">
+                                            <path d="M55.4167 35C55.4167 29.3125 53.4358 24.4878 49.474 20.526C45.5122 16.5642 40.6875 14.5833 35 14.5833V8.75C38.6458 8.75 42.0608 9.44271 45.2448 10.8281C48.4288 12.2135 51.1997 14.0851 53.5573 16.4427C55.9149 18.8003 57.7865 21.5712 59.1719 24.7552C60.5573 27.9392 61.25 31.3542 61.25 35H55.4167ZM43.75 35C43.75 32.5694 42.8993 30.5035 41.1979 28.8021C39.4965 27.1007 37.4306 26.25 35 26.25V20.4167C39.0347 20.4167 42.474 21.8385 45.3177 24.6823C48.1615 27.526 49.5833 30.9653 49.5833 35H43.75ZM58.1875 61.25C52.1111 61.25 46.1076 59.9254 40.1771 57.276C34.2465 54.6267 28.8507 50.8715 23.9896 46.0104C19.1285 41.1493 15.3733 35.7535 12.724 29.8229C10.0747 23.8924 8.75 17.8889 8.75 11.8125C8.75 10.9375 9.04167 10.2083 9.625 9.625C10.2083 9.04167 10.9375 8.75 11.8125 8.75H23.625C24.3056 8.75 24.9132 8.9809 25.4479 9.44271C25.9826 9.90451 26.2986 10.4514 26.3958 11.0833L28.2917 21.2917C28.3889 22.0694 28.3646 22.7257 28.2188 23.2604C28.0729 23.7951 27.8056 24.2569 27.4167 24.6458L20.3438 31.7917C21.316 33.5903 22.4705 35.3281 23.8073 37.0052C25.1441 38.6823 26.6146 40.2986 28.2188 41.8542C29.7257 43.3611 31.3056 44.7587 32.9583 46.0469C34.6111 47.3351 36.3611 48.5139 38.2083 49.5833L45.0625 42.7292C45.5 42.2917 46.0712 41.9635 46.776 41.7448C47.4809 41.526 48.1736 41.4653 48.8542 41.5625L58.9167 43.6042C59.5972 43.7986 60.1562 44.151 60.5938 44.6615C61.0312 45.1719 61.25 45.7431 61.25 46.375V58.1875C61.25 59.0625 60.9583 59.7917 60.375 60.375C59.7917 60.9583 59.0625 61.25 58.1875 61.25ZM17.5729 26.25L22.3854 21.4375L21.1458 14.5833H14.6563C14.8993 16.5764 15.2396 18.5451 15.6771 20.4896C16.1146 22.434 16.7465 24.3542 17.5729 26.25ZM43.6771 52.3542C45.5729 53.1806 47.5052 53.8368 49.474 54.3229C51.4427 54.809 53.4236 55.125 55.4167 55.2708V48.8542L48.5625 47.4688L43.6771 52.3542Z" fill="#AE275F"/>
+                                          </g>
+                                        </svg> 
+                                     <p>IVRS</p>
+                                  </div>
+                                 
+                              </div>
+                          </div>
+                          <div class="col-lg-4 ways">
+                              <div class="sec-3-box">
+                                  <div>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+                                      <mask id="mask0_1_2470" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="70" height="70">
+                                        <rect width="70" height="70" fill="#D9D9D9"/>
+                                      </mask>
+                                      <g mask="url(#mask0_1_2470)">
+                                        <path d="M9.91732 59.5003L3.20898 52.9378C2.62565 52.3545 2.33398 51.6739 2.33398 50.8962C2.33398 50.1184 2.62565 49.4378 3.20898 48.8545C7.48676 44.2364 12.4208 40.7729 18.0111 38.4639C23.6013 36.1548 29.2645 35.0003 35.0006 35.0003C40.7368 35.0003 46.3878 36.1548 51.9538 38.4639C57.5197 40.7729 62.4659 44.2364 66.7923 48.8545C67.3756 49.4378 67.6673 50.1184 67.6673 50.8962C67.6673 51.6739 67.3756 52.3545 66.7923 52.9378L60.084 59.5003C59.5493 60.035 58.9295 60.3267 58.2246 60.3753C57.5197 60.4239 56.8756 60.2295 56.2923 59.792L47.834 53.3753C47.4451 53.0837 47.1534 52.7434 46.959 52.3545C46.7645 51.9656 46.6673 51.5281 46.6673 51.042V42.7295C44.8201 42.1462 42.9243 41.6844 40.9798 41.3441C39.0354 41.0038 37.0423 40.8337 35.0006 40.8337C32.959 40.8337 30.9659 41.0038 29.0215 41.3441C27.077 41.6844 25.1812 42.1462 23.334 42.7295V51.042C23.334 51.5281 23.2368 51.9656 23.0423 52.3545C22.8479 52.7434 22.5562 53.0837 22.1673 53.3753L13.709 59.792C13.1257 60.2295 12.4816 60.4239 11.7767 60.3753C11.0718 60.3267 10.452 60.035 9.91732 59.5003ZM17.5007 44.7712C16.0909 45.5003 14.7298 46.3389 13.4173 47.2868C12.1048 48.2347 10.7437 49.292 9.33398 50.4587L12.2507 53.3753L17.5007 49.292V44.7712ZM52.5007 44.917V49.292L57.7506 53.3753L60.6673 50.6045C59.2576 49.3406 57.8965 48.2469 56.584 47.3232C55.2715 46.3996 53.9104 45.5975 52.5007 44.917ZM34.8548 33.1045L20.4173 18.667V26.2503H14.584V8.75033H32.084V14.5837H24.5007L34.7819 24.8649L51.2611 8.38574L55.4173 12.542L34.8548 33.1045Z" fill="#AE275F"/>
+                                      </g>
+                                    </svg>
+                                  <P>Missed Call Banking</P>
+                              </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                  </div>
+              </section>
+          </div>
+      </div>
+<!-- section-3-end -->
+
+
+<!-- section-4-start -->
+<div class="section-4">
+  <div class="container">
+      <div class="section-4-head" >
+          <h1>One App <span>One Banking</span></h1>
+      </div>
+      <div class="row ">
+          <div class="col-xl-8 col-lg-12 mt-5">
+             <div class="row g-4 ">
+                  <div class="col-xl-6 col-lg-6 ">
+                      <div class="sec-4-box" >
+                          <div class="sec-4-box-img-circle">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                  <path d="M15.1665 10.5H24.4998L12.8332 28V17.5H4.6665L15.1665 0V10.5ZM12.8332 12.8333V8.42333L8.78717 15.1667H15.1665V20.293L20.14 12.8333H12.8332Z" fill="#AE275F"/>
+                                </svg> 
+                         </div>
+                          <div class="sec-4-para">
+                              <h3>Instant <br>
+                              Transistion</h3>
+                              <p>Credit transfers that make 
+                              funds available in a payee's 
+                              account within ten seconds 
+                              of a payment order being
+                              made.</p>
+                          </div>
+                      </div>
+                  
+                  </div>
+                  <div class="col-xl-6 col-lg-6">
+                      <div class="sec-4-box">
+                          <div class="sec-4-box-img-circle">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                  <path d="M11.6666 23.3333H6.99992V25.6666H4.66659V23.3333H3.49992C3.1905 23.3333 2.89375 23.2104 2.67496 22.9916C2.45617 22.7728 2.33325 22.4761 2.33325 22.1666V4.66664C2.33325 4.35722 2.45617 4.06048 2.67496 3.84169C2.89375 3.62289 3.1905 3.49998 3.49992 3.49998H11.6666V1.85498C11.6666 1.7703 11.6851 1.68665 11.7207 1.60983C11.7563 1.53301 11.8083 1.46487 11.8729 1.41014C11.9375 1.35541 12.0132 1.3154 12.0949 1.29289C12.1765 1.27039 12.2621 1.26592 12.3456 1.27981L24.6912 3.33781C24.9637 3.3831 25.2112 3.52356 25.3898 3.73419C25.5684 3.94483 25.6665 4.21199 25.6666 4.48814V6.99998H26.8333V9.33331H25.6666V17.5H26.8333V19.8333H25.6666V22.3451C25.6665 22.6213 25.5684 22.8885 25.3898 23.0991C25.2112 23.3097 24.9637 23.4502 24.6912 23.4955L23.3333 23.7218V25.6666H20.9999V24.1115L12.3456 25.5535C12.2621 25.5674 12.1765 25.5629 12.0949 25.5404C12.0132 25.5179 11.9375 25.4779 11.8729 25.4231C11.8083 25.3684 11.7563 25.3003 11.7207 25.2235C11.6851 25.1466 11.6666 25.063 11.6666 24.9783V23.3333ZM13.9999 22.9133L23.3333 21.357V5.47631L13.9999 3.92114V22.9121V22.9133ZM19.2499 16.3333C18.2839 16.3333 17.4999 15.0266 17.4999 13.4166C17.4999 11.8066 18.2839 10.5 19.2499 10.5C20.2159 10.5 20.9999 11.8066 20.9999 13.4166C20.9999 15.0266 20.2159 16.3333 19.2499 16.3333Z" fill="#AE275F"/>
+                                </svg>
+                         </div>  
+                        <div class="sec-4-para">
+                              <h3>Saving <br>
+                              accounts
+                              </h3>
+                              <p>Interest-bearing deposit account held at a bank or other financial institution. Though these accounts typically pay only a modest.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6" >
+                      <div class="sec-4-box">
+                          <div class="sec-4-box-img-circle">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                  <path d="M8.16683 4.66668V23.3333H19.8335V4.66668H8.16683ZM7.00016 2.33334H21.0002C21.3096 2.33334 21.6063 2.45626 21.8251 2.67505C22.0439 2.89384 22.1668 3.19059 22.1668 3.50001V24.5C22.1668 24.8094 22.0439 25.1062 21.8251 25.325C21.6063 25.5438 21.3096 25.6667 21.0002 25.6667H7.00016C6.69074 25.6667 6.394 25.5438 6.17521 25.325C5.95641 25.1062 5.8335 24.8094 5.8335 24.5V3.50001C5.8335 3.19059 5.95641 2.89384 6.17521 2.67505C6.394 2.45626 6.69074 2.33334 7.00016 2.33334ZM14.0002 19.8333C14.3096 19.8333 14.6063 19.9563 14.8251 20.1751C15.0439 20.3938 15.1668 20.6906 15.1668 21C15.1668 21.3094 15.0439 21.6062 14.8251 21.825C14.6063 22.0438 14.3096 22.1667 14.0002 22.1667C13.6907 22.1667 13.394 22.0438 13.1752 21.825C12.9564 21.6062 12.8335 21.3094 12.8335 21C12.8335 20.6906 12.9564 20.3938 13.1752 20.1751C13.394 19.9563 13.6907 19.8333 14.0002 19.8333Z" fill="#AE275F"/>
+                                </svg>
+                         </div>                           
+                          <div class="sec-4-para">
+                              <h3>Mobile<br>
+                              banking
+                              </h3>
+                              <p>provided by a bank or other financial institution that allows its customers to conduct financial transactions.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6" >
+                      <div class="sec-4-box">
+                          <div class="sec-4-box-img-circle">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                  <path d="M5.83333 3.5V22.1667H24.5V24.5H3.5V3.5H5.83333ZM23.6752 7.34183L25.3248 8.9915L18.6667 15.6497L15.1667 12.1508L10.1582 17.1582L8.5085 15.5085L15.1667 8.85033L18.6667 12.3492L23.6752 7.34183Z" fill="#AE275F"/>
+                                </svg> 
+                         </div>                          
+                           <div class="sec-4-para">
+                              <h3>Advanced<br>
+                              statistics
+                              </h3>
+                              <p>Experience the power of Data Science with 9-month online program from Great Lakes. Accelerate your financial growth.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6" >
+                      <div class="sec-4-box">
+                          <div class="sec-4-box-img-circle">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                  <path d="M3.50016 3.5H24.5002C24.8096 3.5 25.1063 3.62292 25.3251 3.84171C25.5439 4.0605 25.6668 4.35725 25.6668 4.66667V23.3333C25.6668 23.6428 25.5439 23.9395 25.3251 24.1583C25.1063 24.3771 24.8096 24.5 24.5002 24.5H3.50016C3.19074 24.5 2.894 24.3771 2.6752 24.1583C2.45641 23.9395 2.3335 23.6428 2.3335 23.3333V4.66667C2.3335 4.35725 2.45641 4.0605 2.6752 3.84171C2.894 3.62292 3.19074 3.5 3.50016 3.5ZM23.3335 14H4.66683V22.1667H23.3335V14ZM23.3335 9.33333V5.83333H4.66683V9.33333H23.3335Z" fill="#AE275F"/>
+                                </svg> 
+                         </div>                           
+                          <div class="sec-4-para">
+                              <h3>Virtual<br>
+                              Cards
+                              </h3>
+                              <p>safer way to pay online or in-app. When you use a virtual card to make a purchase.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6" >
+                      <div class="sec-4-box">
+                          <div class="sec-4-box-img-circle">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                  <path d="M0.804932 8.16317C4.53721 5.13954 9.19659 3.49289 13.9999 3.5C18.9991 3.5 23.5899 5.2465 27.1949 8.16317L25.7296 9.9785C22.4118 7.29059 18.2699 5.82684 13.9999 5.83333C9.5561 5.83333 5.47627 7.385 2.27027 9.9785L0.804932 8.16317ZM4.46943 12.7015C7.16513 10.5175 10.5305 9.32813 13.9999 9.33333C17.4691 9.32818 20.8344 10.5171 23.5304 12.7003L22.0639 14.5157C19.7829 12.6681 16.9354 11.662 13.9999 11.6667C10.9456 11.6667 8.13977 12.7342 5.93593 14.5157L4.46943 12.7003V12.7015ZM8.1351 17.2398C9.79392 15.8957 11.8649 15.1636 13.9999 15.1667C16.2213 15.1667 18.2618 15.9425 19.8648 17.2387L18.3983 19.054C17.1541 18.0463 15.601 17.4975 13.9999 17.5C12.3339 17.5 10.8033 18.0822 9.6016 19.054L8.1351 17.2387V17.2398ZM11.8008 21.7782C12.4227 21.2738 13.1992 20.999 13.9999 21C14.8329 21 15.5983 21.2917 16.1991 21.777L13.9999 24.5L11.8008 21.777V21.7782Z" fill="#AE275F"/>
+                                </svg>
+                         </div>                         
+                            <div class="sec-4-para">
+                              <h3>Contactless<br>
+                              Payments
+                              </h3>
+                              <p>Contactless payments are made in close physical proximity, unlike other types of mobile payments.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-4  col-lg-12 " >
+            <div class="text-center">
+              <img src="assets/img/phone mockup.jpg" alt="" class="img-fluid mob-mockup-img" >
+            </div>
+              
+          </div>
+      </div>
+  </div>
+</div>
+<!-- section-4-end -->
+
+<!-- section-5-start -->
+<div class="section-5 delas_offer">
+  
+
+  <div class="slideshow-container mt-5">
+        <div class="section-5-head" >
+            <h1>Deals<span> And Offers</span></h1>
+        </div>
+      <div class="mySlides fade">
+          <img src="./assets/img/deal and offers.png" style="width:60%" class="img-fluid" >
+      </div>
+
+      <div class="mySlides fade">
+          <img src="./assets/img/deal and offer 2.png" style="width:60%" class="img-fluid">
+      </div>
+
+      <div class="mySlides fade">
+          <img src="./assets/img/deal and offers.png" style="width:60%" class="img-fluid">
+      </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+  </div>
+</div>
+<!-- section-5-start -->
+<!-- section-6-start -->
+<div class="section-6">
+  <div class="container">
+    <div class="section-6-head" >
+      <h1>Blo<span>gs</span></h1>
+  </div>
+      <div class="row blog-row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="blog-img-box">
+                  <div id="blog-img-box" >
+                  <img src="assets/img/blog-atm.jpg" alt="" class="img-fluid blog-img">
+                  </div>
+              
+              <div>
+                  <h2>How To Start Using Nexus For<br> Your Startup</h2>
+                  <p>Technology has revolutionised almost every aspect of our lives, including the way we conduct our banking transactions. Federal Bank customers now have the option...</p>
+                <button class="">App</button> 
+                <button class="">Technology</button>
+              </div>
+          </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="blog-img-box">
+                  <div id="blog-img-box" >
+                      <img src="assets/img/blog-lady.jpg" alt="" class="img-fluid blog-img">
+                  </div>
+                  <div>
+                      <h2>10 Things Nobody Told You,<br> About Nexus</h2>
+               <p>Federal Bank believes that banking is more than just statistics and transactions, and that it is about connecting with our customers on a more human level. We...</p>
+               <button class="">Technology</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="blog-img-box">
+                  <div id="blog-img-box" > 
+                      <img src="assets/img/blog-purse.jpg" alt="" class="img-fluid blog-img blog-img-purse">
+                      
+                  </div>
+                  <div>
+                      <h2>How To Start Using Nexus For <br>Your Startup</h2>
+                      <p>Technology has revolutionised almost every aspect of our lives, including the way we conduct our banking transactions. Federal Bank customers now have the option...</p>
+                      <button class="">App</button>
+                      <button class="">Product</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- section-6-end -->
+<!-- section-7-start -->
+<div class="section-7">
+  <div class="container">
+    <div class="section-7-head" >
+      <h1>Revi<span>ews</span></h1>
+    </div>
+    <div class="textimonial-head">
+      <h4>Testimonials</h4>
+      <div class="textimonial-head-2">
+        <h2>People all over the <br> world use Nexus.</h2>
+        <div >
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <path d="M11 16.7383L4.53475 20.3573L5.9785 13.0899L0.538086 8.05925L7.89617 7.18659L11 0.458252L14.1038 7.18659L21.4619 8.05925L16.0215 13.0899L17.4653 20.3573L11 16.7383Z" fill="#AE275F"/>
+          </svg>
+        </span>
+        <h6>Rated <span>4.8/5</span>from over 1000 users</h6>
+        </div>
+      </div>
+    </div>
+    <div class="row tsml-row ">
+        <div class="col-xl-4 col-md-6 tsml-box">
+        <div class="div" >
+          <div class="star-line">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <h2>"Satisfactory"</h2>              
+            </div>
+            <div class="tsml-para">
+              <p>I am using Nexus credit card for 1.5 years, the card have many offers on shopping, fuel, movie ticket and some reward points. The credit limit is 1 lakh which is very sufficient. I do my bill payment through as bank is available nearby.Also am using net banking and it functions very well.</p>
+              <h4>Cody Fisher</h4>
+              <h5>Medical Assistant</h5>
+            </div>
+         </div>
+      </div>
+      <div class="col-xl-4 col-md-6 tsml-box" >
+        <div class="div">
+          <div class="star-line">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <h2>""Pretty good""</h2>              
+            </div>
+            <div class="tsml-para">
+              <p>I have just got the card one month ago, I have done less transactions and till now I haven't got my bill payment. The credit card is good but i am not satisfied with the credit limit of 37000 rupees only. Hope they increase the limit apart from that its fine.</p>
+              <br>
+              <h4>Jenny Wilson</h4>
+              <h5>Nursing Assistant</h5>
+            </div>
+         </div>
+      </div>
+      <div class="col-xl-4 col-md-6 tsml-box" >
+        <div class="div">
+          <div class="star-line">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <h2>"Great!"</h2>              
+            </div>
+            <div class="tsml-para">
+              <p>I have my salary account in Nexus, when I applied for the card I got my statement on time. I am very much satisfied with the the account. Net banking is also functioning smooth and convenient for me. There are some offer in the cards which was good.</p>
+              <br>
+              <h4>Guy Hawkins</h4>
+              <h5>President of Sales</h5>
+            </div>
+         </div>
+      </div>
+      <div class="col-xl-4 col-md-6 tsml-box" >
+        <div class="div">
+          <div class="star-line">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <h2>"Blown Away!"</h2>              
+            </div>
+            <div class="tsml-para">
+              <p>I am having Nexus credit card with a limit of 120000 and its a life time free card,the bank provide my statement on time,by using this card i used to get offers on malls and groceries.I pay my bill directly through the bank.But no ATM is available nearby.</p>
+              <br>
+              <h4>Cody Fisher</h4>
+              <h5>Medical Assistant</h5>
+            </div>
+         </div>
+      </div>
+      <div class="col-xl-4 col-md-6 tsml-box" >
+        <div class="div">
+          <div class="star-line">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <h2>"Satisfactory"</h2>              
+            </div>
+            <div class="tsml-para">
+              <p>I am using Nexus bank saving account for the past 3years .Each transaction will be safe and always secure .I am using net banking as well mobile banking service it is used for money transfer and recharge only.There was no difficulties faced so far on using this saving account.</p>
+              
+              <h4>Darlene Robertson</h4>
+              <h5>Dog Trainer</h5>
+            </div>
+         </div>
+      </div>
+      <div class="col-xl-4 col-md-6 tsml-box" >
+        <div class="div">
+          <div class="star-line">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M10.6661 15.2167L4.78861 18.5067L6.10111 11.9001L1.15527 7.32675L7.84444 6.53341L10.6661 0.416748L13.4878 6.53341L20.1769 7.32675L15.2311 11.9001L16.5436 18.5067L10.6661 15.2167Z" fill="#AE275F"/>
+            </svg>
+            <h2>"Pretty good"</h2>              
+            </div>
+            <div class="tsml-para">
+              <p>Nexus credit card have a credit limit of 75000 rupees, its a chargeable card of Rs.500 per year along with 87 rupees of GST. The card have a reward points of 500 from amazon if I spend Rs.5000 then only i can redeem the rewards points. I used this card for hotel booking, petrol surcharge and</p>
+              
+              <h4>Dianne Russell</h4>
+              <h5>Medical Assistant</h5>
+            </div>
+         </div>
+      </div>
+      
+    </div>
+    
+  </div>
+</div>
+
+
+
+<!-- footer -->
+<footer>
+    <div class="footer">
+        <div class="container footer-list">
+          <div class="row ">
+            <div class="col-lg-4 col-md-6 footer-bank-list ">
+                <h2>Nexus Bank</h2>
+                <ul class="list-unstyled">
+                    <li>Apply Online</li>
+                    <li>Create Account</li>
+                    <li>Cash Loan</li>
+                    <li>Creditr Card</li>
+                    <li>Newsroom</li>
+                    <li>Fraud & Security</li>
+                    <li>Money Smart for Small Businesses</li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 footer-bank-list">
+              <h2>Helpful Resources</h2>
+                <ul class="list-unstyled">
+                    <li>Careers</li>
+                    <li>Lost & Stolen Cards</li>
+                    <li>Bank Holidays</li>
+                    <li>Money Smart for Adults</li>
+                </ul>   
+
+                <h2>Client Services</h2>        
+                <p>800-257-8316</p>     
+            </div>
+            <div class="col-lg-4 col-md-6 footer-bank-list">
+              <h2>Download App</h2>
+              <div class="business-app foot-app">
+                <h3>Business Banking</h3>
+                <div class="app-img">
+                  <img src="assets/img/apple-store.svg.svg" alt="">
+                <img src="assets/img/google-play.svg.svg" alt="">
+                </div>
+                
+              </div>
+              <div class="Personal-Bank foot-app">
+                <div>
+                  <h3>Personal Banking</h3>
+                <div class="app-img">
+                  <img src="assets/img/apple-store.svg.svg" alt="">
+                <img src="assets/img/google-play.svg.svg" alt="">
+                </div>
+                </div>
+              </div>
+            </div>
+
+           </div>
+           <div class="socialmedia"  1000">
+              <img src="assets/img/Linkedin WC.jpg" alt="">
+              <img src="assets/img/Twitter WC.jpg" alt="">
+              <img src="assets/img/Facebook WC.jpg" alt="">
+              <img src="assets/img/Instagram WC.jpg" alt="">
+            </div>
+              
+              
+           </div>
+           <hr>
+           <div class="copyrigths" >
+            <p>@ 2023 Nexus Trust bank limited</p> 
+            <h6>Developed by Tech Titans</h6>
+           </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</footer>
+<!-- bootstrap cdn -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+  var image1 = 'assets/img/bot.png';
+  var image2 = 'assets/img/bot-hover.png';
+  var alt1 = 'Image 1';
+  var alt2 = 'Image 2';
+
+  $('#bot').click(function() {
+    // Get the current source of the image
+    var currentSrc = $('#bot').attr('src');
+
+    if (currentSrc === image1) {
+      $('#bot').attr('src', image2);
+      $('#bot').attr('alt', alt2);
+    } else {
+      $('#bot').attr('src', image1);
+      $('#bot').attr('alt', alt1);
+    }
+  });
+});
+
+</script>
+</body>
+<script src="assets/script.js"></script>
+</html>

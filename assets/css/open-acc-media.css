@@ -1,0 +1,17 @@
+@media (max-width: 576px){
+    .kyc-main{
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+    }
+    .kyc-para{
+        font-size: 15px;
+        line-height: 21px;
+        font-weight: 300;
+    }
+    .kyc-box{
+        padding: 20px !important;
+    }
+    .kyc-online-btn{
+        padding-top: 30px;
+    }
+}
